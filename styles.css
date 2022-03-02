@@ -1,0 +1,33 @@
+body {
+  background: rgb(247, 241, 231);
+}
+
+li {
+  padding: 0.5rem;
+  margin-block-end: 8px;
+  transition: background-color 200ms ease 0s;
+  border-radius: 4px;
+}
+
+#grand-parents > li {
+  border: 2px solid;
+}
+
+/**
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover
+**/
+@media (pointer: fine) and (hover: hover) {
+  #grand-parents > li:hover {
+    background: #60a5fa;
+    color: white;
+  }
+  #grand-parents > li li:hover {
+    background: #e879f9;
+  }
+}
+
+ol {
+  list-style: none;
+  padding-inline-start: 1rem;
+}
