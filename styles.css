@@ -1,4 +1,6 @@
 body {
+  --blue-400: #60a5fa;
+  --fuchsia-400: #e879f9;
   background: rgb(247, 241, 231);
 }
 
@@ -19,11 +21,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover
 **/
 @media (pointer: fine) and (hover: hover) {
   #grand-parents > li:hover {
-    background: #60a5fa;
+    background: var(--blue-400);
     color: white;
   }
   #grand-parents > li li:hover {
-    background: #e879f9;
+    background: var(--fuchsia-400);
   }
 }
 
